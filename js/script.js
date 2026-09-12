@@ -1,5 +1,10 @@
-const btn = document.getElementById('btn');
+// Aguarda o carregamento completo do DOM antes de interagir
+document.addEventListener('DOMContentLoaded', () => {
+  const btnAcao = document.getElementById('btn-acao');
 
-btn.addEventListener('click', () => {
-  alert('OK');
+  if (btnAcao) {
+    btnAcao.addEventListener('click', () => {
+      alert('Estrutura funcionando perfeitamente!');
+    });
+  }
 });
